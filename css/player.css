@@ -1,0 +1,164 @@
+.player {
+    margin-top: 64px;
+}
+
+.player__content {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.player__image {
+    width: 528px;
+}
+
+.player__information {
+    display: flex;
+    flex: 1 1 650px;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-start;
+}
+
+.player__title {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+.table__row {
+    display: flex;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.table__row:last-child {
+    border-bottom: none;
+}
+
+.row__item {
+    padding: 16px;
+    display: flex;
+    flex: 1 1 290px;
+}
+
+.row__item:first-child {
+    padding-left: 0;
+    border-right: 2px solid rgb(208, 208, 208);
+    color: #313131;
+    opacity: 0.7;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.row__item:last-child {
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.table_padding-top {
+    padding-top: 0;
+}
+
+.table_padding-bottom {
+    padding-bottom: 0;
+}
+
+.line__text {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    padding-right: 12px;
+}
+
+.player__text {
+    color: #3057A2;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+@media only screen and (max-width: 1335px) {
+    .player__title {
+        font-size: 28px;
+    }
+
+    .row__item:first-child {
+        font-size: 17px;
+    }
+
+    .row__item:last-child {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .player__title {
+        font-size: 28px;
+    }
+
+    .player__content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .player__information {
+        flex: 1 1 100px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .player__text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .player__title {
+        font-size: 28px;
+    }
+
+    .player__content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .player__information {
+        padding-top: 4px;
+        gap: 40px;
+    }
+
+    .table__row {
+        padding: 16px 0;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .table__row:nth-child(3) {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .row__item {
+        padding: 0;
+        flex-basis: 0;
+    }
+
+    .row__item:first-child {
+        border-right: 0;
+        font-size: 20px;
+    }
+
+
+    .row__item:last-child {
+        font-size: 20px;
+    }
+}

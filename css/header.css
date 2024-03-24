@@ -1,0 +1,158 @@
+.header {
+    background-image: url('../images/bg_header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    padding: 26px 0 132px 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 542px;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 245px;
+    height: auto;
+}
+
+.header__content-title {
+    padding-top: 62px;
+    color: #313131;
+    font-family: "Merriweather", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.header__title:last-child {
+    text-align: center;
+}
+
+.header__content-span {
+    text-align: center;
+    padding-top: 24px;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.header__content-buttons {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.button__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 263px;
+
+    height: 72px;
+    padding: 20px 45px;
+
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    border-radius: 66px;
+}
+
+.button__header:first-child {
+    background: #1F1F1F;
+    color: white;
+}
+
+.button__header:first-child:hover {
+    transition: 0.3s ease-in-out;
+    color: #1F1F1F;
+    background-color: #FBCE51;
+}
+
+.button__header:last-child {
+    border: 2px solid #1F1F1F;
+    color: #1F1F1F;
+    background: none;
+    transition: 0.3s ease-in-out;
+}
+
+.button__header:last-child:hover {
+    background: #1F1F1F;
+    color: white;
+}
+
+@media only screen and (max-width: 1335px) {
+    .header__content-title {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__content {
+        flex: 0 1 460px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .header {
+        background-image: url('../images/bg__header-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 18px 0 291px 0;
+    }
+
+    .header__content-title {
+        padding-top: 40px;
+        font-size: 45px;
+    }
+
+    .button__header:last-child {
+        background: white;
+        color: #1F1F1F;
+        border: 1px solid white;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .header__content {
+        flex: 0 1 335px;
+    }
+
+    .header__content-title {
+        font-size: 36px;
+    }
+
+    .header__content-span {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .header__content-buttons {
+        padding-top: 32px;
+        gap: 14px;
+    }
+
+    .button__header {
+        flex: 1 1 335px;
+        height: 47px;
+        padding: 18px 43px;
+    }
+
+    .running__line {
+        padding: 12px 12px;
+    }
+
+    .line__inner {
+        font-size: 16px;
+    }
+}

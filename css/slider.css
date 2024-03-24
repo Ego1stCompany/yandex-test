@@ -1,0 +1,260 @@
+.slider {
+    margin: 200px 0;
+}
+
+.container__slider {
+    max-width: 1242px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.slider__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__title {
+    color: #1F1F1F;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.slider__buttons {
+    display: flex;
+}
+
+.slider__buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.button__slider {
+    background: #313131;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.button__slider:hover {
+    transition: 0.3s ease-in-out;
+    color: #1F1F1F;
+    background-color: #FBCE51;
+}
+
+.counter__slider {
+    color: #313131;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.counter__slider-middle {
+    opacity: 0.6;
+}
+
+.counter__slider:last-child {
+    opacity: 0.6;
+}
+
+.slider__list {
+    display: flex;
+}
+
+.slider__container {
+    display: none;
+    flex: 1 1 100%;
+    gap: 20px;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 394px;
+    gap: 20px;
+}
+
+.slider__text {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.slider__title-item {
+    color: #313131;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.slider__span {
+    opacity: 0.6;
+    color: #313131;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.button__slider-item {
+    border: 1px solid rgb(48, 87, 162);
+    border-radius: 62px;
+    padding: 12px;
+    width: 113px;
+    color: #3057A2;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.button__slider-item:hover {
+    color: white;
+    background-color: #3057A2;
+    transition: 0.3s ease-in-out;
+}
+
+.active__slider {
+    display: flex;
+}
+
+.slider__content-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1335px) {
+    .container__slider {
+        max-width: 1024px;
+    }
+
+    .slider__title {
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .slider {
+        margin: 100px 0;
+    }
+
+    .container__slider {
+        max-width: 768px;
+    }
+
+    .slider__title {
+        font-size: 40px;
+    }
+
+    .slider__title-item {
+        font-size: 18px;
+    }
+
+    .slider__span {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .slider__title {
+        font-size: 30px;
+    }
+
+    .container__slider {
+        max-width: 640px;
+    }
+
+    .slider__title-item {
+        font-size: 16px;
+    }
+
+    .slider__span {
+        font-size: 14px;
+    }
+
+    .button__slider-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .container__slider {
+        max-width: 425px;
+    }
+
+    .slider__title {
+        font-size: 36px;
+    }
+
+    .slider__buttons {
+        display: none;
+    }
+
+    .slider__list {
+        display: none;
+    }
+
+    .slider__list-mobile {
+        display: flex;
+    }
+
+    .slider__content-mobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .slider__buttons-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .image__players-mobile {
+        width: 244px;
+        display: inline-block;
+        height: auto;
+    }
+
+    .slider__item-mobile {
+        display: none;
+        flex: 1 1 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .active__slider {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .container__slider {
+        max-width: 100%;
+    }
+}

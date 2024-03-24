@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import "./reset.css";
+@import "./css/header.css";
+@import "./css/riunningLine.css";
+@import "./css/session.css";
+@import "./css/player.css";
+@import "./css/stages.css";
+@import "./css/slider.css";
+@import "./css/footer.css";
+
+
+.container {
+    max-width: 1242px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.text__color {
+    color: #F54932;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+.disabled__button {
+    background: rgb(214, 214, 214);
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1335px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .text__color {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .text__color {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .text__color {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        max-width: 425px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .text__color {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .stages__card {
+        display: none;
+    }
+}
+
+
+
